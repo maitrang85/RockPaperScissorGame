@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section {
+	height: 100vh;
+	background-color: #db7c6b;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.score {
+	color: #f2eceb;
+	height: 30vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.score h2 {
+	font-size: 40px;
+}
+
+.score p {
+	text-align: center;
+	font-size: 50px;
+	color: #2941d6;
+	font-weight: 600;
+}
+
+.intro {
+	color: #f2eceb;
+	height: 40vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+	font-size: 45px;
+}
+
+.intro button,
+.match button {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	background: none;
+	border: none;
+	font-family: 'Courier New', Courier, monospace;
+	color: #f2eceb;
+	background-color: #2941d6;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.resetGame button {
+	width: 300px;
+	height: 300px;
+	font-size: 40px;
+	background: none;
+	border: none;
+	font-family: 'Courier New', Courier, monospace;
+	color: #f2eceb;
+	background-color: #2941d6;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.resetGame {
+	color: #f2eceb;
+	height: 5vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	transition: opacity 0.5s ease;
+}
+
+.match {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: opacity 0.5s ease 0.5s;
+}
+
+.winner {
+	color: #f2eceb;
+	text-align: center;
+	font-size: 40px;
+}
+
+.hands,
+.options {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.player-hand {
+	transform: rotateY(180deg);
+}
+
+@keyframes shakePlayer {
+	0% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	15% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	25% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	35% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	50% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	65% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	75% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+	85% {
+		transform: rotateY(180deg) translateY(-50px);
+	}
+	100% {
+		transform: rotateY(180deg) translateY(0px);
+	}
+}
+
+@keyframes shakeComputer {
+	0% {
+		transform: translateY(0px);
+	}
+	15% {
+		transform: translateY(-50px);
+	}
+	25% {
+		transform: translateY(0px);
+	}
+	35% {
+		transform: translateY(-50px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	65% {
+		transform: translateY(-50px);
+	}
+	75% {
+		transform: translateY(0px);
+	}
+	85% {
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
