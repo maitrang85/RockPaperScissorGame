@@ -4,3 +4,4 @@ An application that simulates a Rock paper scissors game.
 - Game ends when: user(player) or computer gets 3 wins in a row; OR when user(player) or computer wins after 10 times. 
 
 
+
